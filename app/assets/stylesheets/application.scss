@@ -42,7 +42,7 @@ body {
 }
 
 .cover-container {
-  max-width: 75em;
+  max-width: 40em;
 }
 
 
@@ -107,3 +107,16 @@ body {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 }
+
+/*
+ * Custom Styles
+ */
+
+ .card-body {
+   color: black;
+   text-shadow: none;
+ }
+
+ .auth-links a {
+   color: black;
+ }
