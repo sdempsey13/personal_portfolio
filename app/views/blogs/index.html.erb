@@ -4,7 +4,6 @@
   </h3>
   <%= link_to 'Write A New Blog', new_blog_path  if logged_in?(:site_admin) %>
 
-
   <%= render @blogs %>
 
   <%= paginate @blogs %>
