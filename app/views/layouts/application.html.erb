@@ -13,16 +13,18 @@
   </head>
 
   <body>
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
-      <%= render "shared/application_nav" %>
+      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
-      <main role="main" class="inner cover">
-      <%= yield %>
-      </main>
-      <%= render "shared/application_footer" %>
+        <%= render "shared/application_nav" %>
 
-      <%= source_helper("application") %>
-    </div>
+        <main role="main" class="inner cover">
+        <%= yield %>
+        </main>
+        <%= render "shared/application_footer" %>
+
+        <%= source_helper("application") %>
+      </div>
+
   </body>
 </html>
