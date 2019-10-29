@@ -151,3 +151,50 @@ body {
   padding: 15px;
   background-color: rgba(220, 220, 220, 0.9);
 }
+
+/* Portfolio */
+
+.jumbotron {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.jumbotron h1 {
+  color: black;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+/*
+* Custom Styles
+*/
+
+.portfolio-container {
+  padding-top: 30px
+}
