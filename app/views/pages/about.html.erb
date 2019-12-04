@@ -1,11 +1,11 @@
-<h1>Pages#about</h1>
-
-<div class="row">
-  <div class="col-md-4">
-    <%= image_tag "pips.png", width: 500, alt: "freediving"%>
+<!-- Start of Jumbotron -->
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1 class="jumbotron-heading text-muted">About Me</h1>
+    <p class="lead text-muted">The gallery that follows represents an evolution in my software development - older projects started as simple wordpress makeovers while newer ones are Rails projects started from scratch. </p>
+    <p>
+      <%= link_to 'Find Out More About Me', about_path, class: "btn btn-primary" %>
+    </p>
   </div>
-  <div class="col-md-8">
-    <p>Find me in app/views/pages/about.html.erb</p>
-  </div>
-
-</div>
+</section>
+<!-- End of Jumbotron -->

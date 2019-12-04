@@ -24,7 +24,6 @@ a:hover {
   border: .05rem solid #fff;
 }
 
-
 /*
  * Base structure
  */
@@ -32,7 +31,6 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
 }
 
 body {
@@ -40,7 +38,6 @@ body {
   display: flex;
   color: #fff;
   text-shadow: none;
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
 .cover-container {
@@ -56,6 +53,7 @@ body {
 }
 
 .masthead-brand {
+  size: 25px;
   margin-bottom: 0;
 }
 
@@ -138,6 +136,22 @@ body {
   margin-right: 15px;
 }
 
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: rgba(0, 0, 0, .65) image-url('computer.jpg') no-repeat;
+  background-blend-mode: darken;
+  background-size: cover;
+}
+
 .tech-news {
   color: black;
   margin: 20px;
@@ -164,10 +178,6 @@ body {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
-}
-
-.jumbotron h1 {
-  color: black;
 }
 
 .jumbotron p:last-child {
