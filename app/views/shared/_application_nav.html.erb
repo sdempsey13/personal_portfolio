@@ -1,9 +1,16 @@
-<header class="masthead mb-auto">
-  <div class="inner">
-    <div class="masthead-brand"><%= link_to image_tag("home_logo.png"), root_path %></div>
-    <nav class="nav nav-masthead justify-content-center app-nav">
-      <%= nav_helper 'nav-link', 'span' %>
-      <%= login_helper 'nav-link' %>
-    </nav>
-  </div>
+<header>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container">
+      <div class="navbar-brand"><%= link_to image_tag("home_logo.png"), root_path %></div>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggle-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <%= nav_helper 'nav-link', 'span' %>
+          <%= login_helper 'nav-link' %>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>
