@@ -1,9 +1,11 @@
-<header>
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+<header class="masthead mb-auto">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top nav-masthead">
     <div class="container">
-      <div class="navbar-brand"><%= link_to image_tag("home_logo.png"), root_path %></div>
+      <div class="navbar-brand">
+        <%= link_to image_tag("home_logo.png"), root_path, class: "navbar-logo", id: "navbar-logo-id" %>
+      </div>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggle-icon"></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
