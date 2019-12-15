@@ -21,11 +21,11 @@
 
 <script>
   document.getElementById("email").addEventListener("click", function(){
-    console.log("Hello");
     navigator.permissions.query({name: "clipboard-write"}).then(result => {
-      console.log("World");
       if (result.state == "granted" || result.state == "prompt") {
         navigator.clipboard.writeText("stevendempsey13@gmail.com");
+      } else {
+        console.log("result.state is not granted or prompt")
       }
     });
   });
