@@ -4,4 +4,32 @@
   <p class="mt-2 lead">
     <%= link_to 'About Me', about_path, class: "btn btn-lg btn-outline-light" %>
   </p>
+
+  <p>Email me at <a class="js-emaillink" href="mailto:matt@example.co.uk">stevendempsey13@gmail.com</a></p>
+
+  <p><button class="js-emailcopybtn"><%= fa_icon "envelope" %></button></p>
 </div>
+
+<script>
+  var copyEmailBtn = document.querySelector('.js-emailcopybtn');
+copyEmailBtn.addEventListener('click', function(event) {
+  // Select the email link anchor text
+  var emailLink = document.querySelector('.js-emaillink');
+  var range = document.createRange();
+  range.selectNode(emailLink);
+  window.getSelection().addRange(range);
+
+  try {
+    // Now that we've selected the anchor text, execute the copy command
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    console.log('Copy email command was ' + msg);
+  } catch(err) {
+    console.log('Oops, unable to copy');
+  }
+
+  // Remove the selections - NOTE: Should use
+  // removeRange(range) when it is supported
+  window.getSelection().removeAllRanges();
+});
+</script>
