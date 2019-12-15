@@ -71,10 +71,6 @@ body {
   border-bottom-color: rgba(255, 255, 255, .25);
 }
 
-.nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
-}
-
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
@@ -170,7 +166,6 @@ body {
 /* Portfolio */
 
 .jumbotron {
-  margin-top: 40px;
   margin-bottom: 20px;
   background-color: #fff;
 }

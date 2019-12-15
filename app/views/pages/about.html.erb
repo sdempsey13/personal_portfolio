@@ -1,11 +1,75 @@
 <!-- Start of Jumbotron -->
-<section class="jumbotron text-center">
-  <div class="container">
-    <h1 class="jumbotron-heading text-muted">About Me</h1>
-    <p class="lead text-muted">The gallery that follows represents an evolution in my software development - older projects started as simple wordpress makeovers while newer ones are Rails projects started from scratch. </p>
-    <p>
-      <%= link_to 'Find Out More About Me', about_path, class: "btn btn-primary" %>
-    </p>
+<section class="jumbotron">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col mb-5">
+        <h1 class="jumbotron-heading text-secondary text-sm-left">About Me</h1>
+        <br>
+        <h2 class="lead text-secondary text-sm-left">I am a full stack web developer based in California.</h2>
+        <br>
+        <p class="text-secondary text-sm-left">As a burgeoning web developer, I have dveloped a passion for full stack development. When I'm not developing, you can find me snowbaording, scuba diving or playing hocky.</p>
+      </div>
+      <div class="col">
+        <%= image_tag "headshot-steven.png" %>
+      </div>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <h1 class="jumbotron-heading text-secondary text-center">My Skills</h1>
+        <h2 class="lead text-secondary">I work with some pretty cool tools</h2>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row">
+      <div class="col-md-3">
+        <%= image_tag "diamond.png" %>
+        <br>
+        <h5 class="text-muted">Ruby</h5>
+      </div>
+      <div class="col-md-3">
+        <%= image_tag "Ruby_on_Rails" %>
+        <br>
+        <h5 class="text-muted">Ruby on Rails</h5>
+      </div>
+      <div class="col-md-3">
+        <%= image_tag "js.png" %>
+        <br>
+        <h5 class="text-muted">Javascript</h5>
+      </div>
+      <div class="col-md-3">
+        <%= image_tag "Python_logo.png" %>
+        <br>
+        <h5 class="text-muted">Python</h5>
+      </div>
+    </div>
+
+    <br class="d-none d-md-block">
+    <br class="d-none d-md-block">
+
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "html" %>
+        <br>
+        <h5 class="text-muted">HTML &amp; CSS</h5>
+      </div>
+      <div class="col-md-4">
+        <%= image_tag "AWS" %>
+        <br>
+        <h5 class="text-muted">Ruby on Rails</h5>
+      </div>
+      <div class="col-md-4">
+        <%= image_tag "github" %>
+        <br>
+        <h5 class="text-muted">Github</h5>
+      </div>
+    </div>
   </div>
 </section>
 <!-- End of Jumbotron -->
