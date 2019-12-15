@@ -21,8 +21,10 @@
 
 <script>
   document.getElementById("email").addEventListener("click", function(){
+    console.log("Hello");
     navigator.permissions.query({name: "clipboard-write"}).then(result => {
       if (result.state == "granted" || result.state == "prompt") {
+        console.log("World");
         navigator.clipboard.writeText("stevendempsey13@gmail.com");
       }
     });
