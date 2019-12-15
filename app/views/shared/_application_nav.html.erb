@@ -11,22 +11,10 @@
         <ul class="navbar-nav ml-auto">
           <%= nav_helper 'nav-link', 'span' %>
           <%= login_helper 'nav-link' %>
-          <a class="nav-link" id="email"><%= fa_icon "envelope" %></a>
+          <a class="nav-link" id="email" href="mailto:stevendempsey13@gmail.com"><%= fa_icon "envelope" %></a>
           <a href="https://www.linkedin.com/in/steven-dempsey-75103a38/" target="_blank" class="nav-link"><%= fa_icon "linkedin" %></a>
         </ul>
       </div>
     </div>
   </nav>
 </header>
-
-<script>
-  document.getElementById("email").addEventListener("click", function(){
-    navigator.permissions.query({name: "clipboard-write"}).then(result => {
-      if (result.state == "granted" || result.state == "prompt") {
-        navigator.clipboard.writeText("stevendempsey13@gmail.com");
-      } else {
-        console.log("result.state is not granted or prompt")
-      }
-    });
-  });
-</script>
