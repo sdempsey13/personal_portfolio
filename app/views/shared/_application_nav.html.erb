@@ -24,6 +24,7 @@
     console.log("Hello");
     navigator.permissions.query({name: "clipboard-write"}).then(result => {
         console.log("World")
+        navigator.clipboard.writeText("stevendempsey13@gmail.com");
       if (result.state == "granted" || result.state == "prompt") {
         console.log("!");
         navigator.clipboard.writeText("stevendempsey13@gmail.com");
